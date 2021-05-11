@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPSC5031_HW5", "CPSC5031_HW5\CPSC5031_HW5.csproj", "{06904CA2-6478-4860-9029-89544DFB9923}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06904CA2-6478-4860-9029-89544DFB9923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06904CA2-6478-4860-9029-89544DFB9923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06904CA2-6478-4860-9029-89544DFB9923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06904CA2-6478-4860-9029-89544DFB9923}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16724060-B9E5-4C7D-8243-64F81AFE4C02}
+	EndGlobalSection
+EndGlobal

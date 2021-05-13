@@ -1,7 +1,4 @@
 ﻿using System;
-/// <summary>
-/// Homework 5 - Heapsort algorithm 
-/// </summary>
 
 namespace CPSC5031_HW5
 {
@@ -37,7 +34,7 @@ namespace CPSC5031_HW5
             Console.WriteLine(array4);
 
             Console.WriteLine("Test case 5 - Array with all negative numbers [-4, -3, -80, -50, -1]");
-            int[] array5 = {-4, -3, -80, -50, -1};
+            int[] array5 = { -4, -3, -80, -50, -1 };
             Heapsort(array5);
             for (int i = 0; i < array5.Length; i++)
             {
@@ -51,7 +48,7 @@ namespace CPSC5031_HW5
         /// <param name="list"></param>
         public static void Heapsort(int[] list)
         {
-            if(list != null)
+            if (list != null)
             {
                 BuildHeap(list);
                 for (int i = list.Length - 1; i > 0; i--)
@@ -59,11 +56,11 @@ namespace CPSC5031_HW5
                     int value = list[0];
                     list[0] = list[i];
                     list[i] = value;
-                    Heapify(list, 0);
+                    Heapify(list, i);
                 }
-            }            
+            }
         }
-        
+
         /// <summary>
         /// rearrange list of values in an array. 
         /// </summary>
@@ -72,10 +69,9 @@ namespace CPSC5031_HW5
         public static void Heapify(int[] list, int i)
         {
             int left = 2 * i + 1;
-            int right = 2 *  i + 2;
+            int right = 2 * i + 2;
             int size = list.Length;
             int highest = i;
-
             if (left < size && list[left] > list[highest])
             {
                 highest = left;
@@ -101,14 +97,14 @@ namespace CPSC5031_HW5
         /// <param name="list"></param>
         public static void BuildHeap(int[] list)
         {
-            if(list != null)
+            if (list != null)
             {
                 int size = list.Length;
                 for (int i = size / 2 - 1; i >= 0; i--)
                 {
                     Heapify(list, i);
                 }
-            }            
+            }
         }
     }
 }

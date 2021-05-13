@@ -101,7 +101,7 @@ namespace CPSC5031_HW5
             {
                 int size = list.Length;
                 for (int i = size / 2 - 1; i >= 0; i--)
-                {
+                { 
                     Heapify(list, i);
                 }
             }

@@ -1,4 +1,7 @@
 ﻿using System;
+/// <summary>
+/// Homework 5
+/// </summary>
 
 namespace CPSC5031_HW5
 {

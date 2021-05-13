@@ -1,4 +1,7 @@
 ﻿using System;
+/// <summary>
+/// Homework 5 - Heapsort algorithm 
+/// </summary>
 
 namespace CPSC5031_HW5
 {
@@ -69,20 +72,16 @@ namespace CPSC5031_HW5
         public static void Heapify(int[] list, int i)
         {
             int left = 2 * i + 1;
-            int right = 2 *  i + 1;
+            int right = 2 *  i + 2;
             int size = list.Length;
-            int highest = 0;
+            int highest = i;
 
-            if (left < size && list[left] > list[i])
+            if (left < size && list[left] > list[highest])
             {
                 highest = left;
             }
-            else
-            {
-                highest = i;
-            }
 
-            if(right < size && list[right] > list[highest])
+            if (right < size && list[right] > list[highest])
             {
                 highest = right;
             }
